@@ -1,17 +1,35 @@
-<template>  
-  <div class="container">
-    <h1 class="text-center">Restaurants</h1>
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card">
-          <img src="https://source.unsplash.com/RVF0ngUujks/1200x900" alt="" class="card-img-top">
-          <h4 class="card-title">Lorem, ipsum.</h4>
-        </div>
-      </div>
-    </div>
-  </div>
+<template>
+  <router-view></router-view>
 </template>
 
-<style>
 
+<style>
+.card {
+  box-shadow: 0px 1px 11px -1px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 0px 1px 11px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 1px 11px -1px rgba(0, 0, 0, 0.53);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+.quantity input {
+  width: 20px;
+  padding: 0 5px;
+  margin: 0 5px;
+  border: 0;
+  outline: none;
+  font-size: initial;
+}
+.quantity span {
+  font-size: 18px;
+  cursor: pointer;
+}
+a,
+h1,
+h4 {
+  text-decoration: none !important;
+  color: #000000;
+}
 </style>
